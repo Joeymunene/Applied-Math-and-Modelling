@@ -1,0 +1,33 @@
+Concepts Used
+Stochastic Calculus
+Brownian motion, Itô's lemma
+Monte Carlo Simulation
+Multiple price path realizations
+Time Series Analysis
+Autocorrelation in volatility
+Probability Distributions
+Lognormal for prices, normal for returns
+Numerical Methods
+Euler-Maruyama discretization
+
+⚙️ Logic & Pseudocode
+Logic Flow
+Define Parameters
+Generate Random Paths
+Brownian motion increments
+Volatility shocks
+Random jumps (optional)
+Compute Price Series
+Apply GBM + jumps
+Visualize Results
+Plot price and volatility
+
+Pseudocode
+1. Set parameters: S0, μ, σ, T, dt, jump_intensity, jump_size
+2. Initialize arrays: S = [S0], volatility = [σ0]
+3. For t in 1...N_steps:
+   a. Generate Brownian increment dW ~ N(0, sqrt(dt))
+   b. Update volatility (OU process)
+   c. Generate jump (if Poisson event occurs)
+   d. Update price: S[t] = S[t-1] * exp((μ - ½σ²)dt + σ dW + jump)
+4. Plot S(t) and σ(t)
