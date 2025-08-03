@@ -1,0 +1,40 @@
+ Concepts Used
+Photovoltaic Physics
+Temperature dependence of solar cells
+Optics
+Angle of incidence effects
+Thermodynamics
+Panel temperature modeling
+Environmental Science
+Dust impact on performance
+Numerical Methods
+Time-dependent simulations
+
+ Logic & Pseudocode
+
+
+Logic Flow
+
+Initialize System
+Panel parameters 
+Environmental conditions (sun position, ambient temp)
+Simulate Time Progression
+Update sun position (hour angle)
+Compute irradiance and temperature
+Calculate efficiency factors
+Animate Results
+Show panel, sun position, and efficiency metrics
+
+Pseudocode
+
+1. Set panel parameters
+2. Initialize environment: G_max, T_ambient, dust_rate
+3. For each timestep:
+   a. Update sun position (hour angle)
+   b. Compute irradiance G (solar noon = max)
+   c. Calculate panel temperature T
+   d. Compute angle factor f_angle
+   e. Update dust accumulation
+   f. Calculate efficiency η
+4. Draw panel, sun, and efficiency graph
+5. Repeat for animation
