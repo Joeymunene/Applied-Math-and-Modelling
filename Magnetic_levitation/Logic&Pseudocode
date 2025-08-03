@@ -1,0 +1,38 @@
+Concepts Used
+
+Classical Mechanics
+Newton's 2nd law for motion
+Eletromagnetics
+Magnetic force approximation
+Control Theory
+PID stabilization
+Numerical Methods
+ODE solving (Runge-Kutta)
+Real-Time Animation
+Matplotlib dynamic plotting
+
+Logic Flow
+
+Initialize System
+Ball mass, equilibrium position, PID gains
+Simulate Dynamics
+Compute magnetic force
+Apply PID control
+Integrate ODE for motion
+Animate
+Draw electromagnet and ball
+Update in real-time
+
+Pseudocode
+
+1. Set parameters: m, g, k, z0, Kp, Ki, Kd
+2. Initialize: z = 0.1, v = 0, I = 0
+3. For each timestep:
+   a. Compute error: e = z_ref - z
+   b. Update PID: I = I0 + Kp*e + Ki*e_integral + Kd*v
+   c. Compute F_magnetic = k*I²/(z0 + z)²
+   d. Compute acceleration: a = (F_magnetic - m*g)/m
+   e. Update position: z += v*dt
+   f. Update velocity: v += a*dt
+4. Draw electromagnet (rectangle) and ball (circle)
+5. Repeat for animation
