@@ -1,0 +1,44 @@
+Concepts Used
+
+Ordinary Differential Equations (ODEs)
+Solved numerically using scipy.integrate.odeint
+Damped Harmonic Motion
+Underdamped, critically damped, and overdamped cases
+Forced Oscillations & Resonance
+Driven systems with external periodic force
+Energy Dissipation
+Damping removes energy over time
+Numerical Methods
+Runge-Kutta (via odeint) for ODE solving
+Real-Time Animation
+matplotlib.animation for visualization
+
+Logic Flow
+
+Define System Parameters
+Mass (m), spring (k), damping (b), driving force (F₀, ω)
+Set Up ODE Solver
+Use odeint to solve m x'' + b x' + k x = F₀ cos(ω t)
+Animate the System
+Draw spring, mass, and wall
+Update position and forces in real-time
+Display Real-Time Data
+Position, velocity, forces
+
+Pseudocode
+
+1. Set parameters: m, k, b, F0, ω, x0, v0
+2. Compute ω₀ = √(k/m), γ = b/(2m)
+3. Define ODE function:
+   - Input: y = [x, v], t
+   - Return: [v, (F₀/m)*cos(ωt) - (b/m)*v - (k/m)*x]
+4. Solve ODE using odeint → x(t), v(t)
+5. Set up animation:
+   - Draw wall (fixed)
+   - Draw spring (coiled)
+   - Draw mass (rectangle)
+6. Update function for animation:
+   - Compute spring shape (sinusoidal coils)
+   - Update mass position
+   - Display forces (F_driving, F_damping, F_spring)
+7. Run animation
