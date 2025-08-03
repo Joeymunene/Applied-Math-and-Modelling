@@ -1,8 +1,0 @@
-This repository contains a simulation of the inverted pendulum, a classic control theory problem that demonstrates balancing an unstable system. 
-This serves as a benchmark for testing control algorithms, such as PID control or state-space methods.
-
-Key Features:
-
-Dynamic modeling of the pendulum-cart system
-Stabilization control to balance the pendulum upright
-Simulation environment for testing different control strategies
