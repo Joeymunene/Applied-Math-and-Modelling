@@ -1,0 +1,43 @@
+Concepts Used
+Classical Mechanics
+Lagrangian dynamics
+Torque and force balance
+Control Theory
+PID control
+State-space representation
+LQR optimal control
+Numerical Methods
+ODE solving (Runge-Kutta)
+Small angle linearization
+Nonlinear Dynamics
+Underactuated systems
+Stability analysis
+
+
+Logic Flow
+Initialize system parameters (masses, lengths)
+Set up control system (PID/LQR)
+
+Simulate dynamics:
+Compute forces and torques
+Integrate equations of motion
+
+Animate:
+Draw cart and pendulum
+Update in real-time
+
+
+Pseudocode
+text
+1. Set parameters: M, m, l, g, b, c
+2. Initialize state: x, θ, dx, dθ = 0
+3. For each timestep:
+   a. Compute control force F (PID/LQR)
+   b. Calculate accelerations:
+      - Solve coupled ODEs for ddx and ddθ
+   c. Update state (Euler/RK4 integration)
+   d. Draw:
+      - Cart (rectangle)
+      - Pendulum (line + bob)
+      - Force arrow
+4. Repeat for animation
