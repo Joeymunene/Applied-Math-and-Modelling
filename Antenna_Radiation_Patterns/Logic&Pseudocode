@@ -1,0 +1,41 @@
+Concepts Used
+
+Electromagnetics
+Maxwell's equations
+Far-field approximations
+Antenna Theory
+Radiation patterns
+Array theory
+Numerical Methods
+Bessel functions
+3D coordinate transforms
+Computer Graphics
+3D surface plotting
+Polar projections
+
+
+Logic Flow
+
+Define antenna parameters
+Type (dipole/parabolic/array)
+Frequency, dimensions
+Calculate radiation pattern
+Far-field equations
+Coordinate transforms
+Visualize in 3D
+Radiation lobes
+Interactive controls
+
+Pseudocode
+
+1. Set parameters: antenna_type, frequency, dimensions
+2. Create angular grid: theta, phi
+3. For dipole:
+   a. Calculate E_field = sin(theta)
+4. For parabolic:
+   a. Calculate E_field = J1(sin(theta))/sin(theta)
+5. For array:
+   a. Calculate array_factor
+   b. Multiply by element pattern
+6. Normalize and plot
+7. Add interactive controls
